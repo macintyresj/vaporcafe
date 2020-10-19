@@ -1,0 +1,29 @@
+$grisoscuro:#463f3a;
+$grismedio:#8a817c;
+$grisclaro:#8a8883; 
+$hueso:#f4f3ee;
+$amarillo:#ffc800;
+$color5:rgba(79, 72, 49, 0.6);
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px 8px 8px;
+    }
+    .column {
+      flex: 25%;
+      max-width: 33%;
+      padding: 0 8px;
+      margin:1%;
+    }
+
+    .column img {
+      margin-top: 0.5rem;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    .cafe{
+    background: $hueso;
+   }
+
+  

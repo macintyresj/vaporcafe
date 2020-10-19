@@ -1,0 +1,325 @@
+p a, .sucursales {
+  color: #f4f3ee;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center; }
+
+p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body footer .containerFooter #foot #foot a:hover {
+  color: #ffc800;
+  text-decoration: underline;
+  background-color: #463f3a;
+  transform: scale(1.2, 1.2); }
+
+.carouselP {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding-top: 0%;
+  color: #ffc800;
+  text-transform: uppercase;
+  font-family: "abrilfatface";
+  background-color: rgba(79, 72, 49, 0.6); }
+
+.linkCarousel:hover {
+  color: white;
+  background: none;
+  text-decoration: underline; }
+
+p a:hover {
+  padding: 2%; }
+
+.textoInicial {
+  margin-top: 10%;
+  padding: 2%;
+  margin-bottom: 0%;
+  background-image: url("fondofrase.jpg");
+  height: 40vw;
+  background-repeat: no-repeat;
+  font-size: 2vw; }
+
+.italica {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 5%;
+  color: #f4f3ee;
+  text-transform: none;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  background: none; }
+  .italica em {
+    text-shadow: 2px 2px 5px; }
+
+#cardHome {
+  text-align: center; }
+  #cardHome .container {
+    padding-top: 2vw;
+    padding-bottom: 5vw; }
+    #cardHome .container .cardFlyer {
+      border-radius: 5px;
+      background: #f4f3ee;
+      margin-top: 50px;
+      transition: all 0.2s ease-in;
+      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4); }
+      #cardHome .container .cardFlyer p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #000000; }
+      #cardHome .container .cardFlyer a {
+        color: #463f3a;
+        font-size: 0.8rem;
+        font-family: "montserrat";
+        text-decoration: none;
+        padding: 1vh;
+        text-transform: uppercase;
+        background-color: #8a8883; }
+      #cardHome .container .cardFlyer .imageBox {
+        overflow: hidden;
+        box-shadow: 0px 2px 15px rgba(79, 72, 49, 0.6);
+        border-radius: 5px; }
+        #cardHome .container .cardFlyer .imageBox .img {
+          width: 100%;
+          height: 300px; }
+      #cardHome .container .cardFlyer .textContainer {
+        padding: 30px 18px;
+        text-align: center; }
+  #cardHome .cardFlyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+    margin-top: 50px; }
+    #cardHome .cardFlyer:hover .imageBox img {
+      opacity: 0.7;
+      transform: scale(1.15); }
+
+.bodyCafe {
+  background-image: url("fondocafe2.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bodyCafe .intro h2 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    padding-top: 5%;
+    color: #8a8883;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    text-align: center;
+    text-shadow: 2px 2px 3px; }
+  .bodyCafe .containerCafes {
+    margin-bottom: 4vw;
+    padding: 5vw;
+    justify-content: space-around;
+    align-items: center; }
+    .bodyCafe .containerCafes .tipo {
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 2vw;
+      box-shadow: 3px 3px 6px black;
+      animation-name: animacion;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 0s; }
+      .bodyCafe .containerCafes .tipo h3 {
+        animation-name: animacion;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 1s; }
+
+@keyframes animacion {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw) skewX(70deg); }
+  60% {
+    opacity: 1;
+    transform: skewX(-20deg); }
+  80% {
+    transform: skewX(15deg); } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px 8px 8px; }
+
+.column {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 8px;
+  margin: 1%; }
+
+.column img {
+  margin-top: 0.5rem;
+  vertical-align: middle;
+  width: 100%; }
+
+.cafe {
+  background: #f4f3ee; }
+
+p a, .sucursales {
+  color: #f4f3ee;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center; }
+
+.local1, .local2 {
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+#dondeEstamos {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-top: 1.2rem;
+  color: #f4f3ee;
+  text-transform: none;
+  font-style: italic; }
+
+.sucursales {
+  margin-bottom: 1rem;
+  height: 300px; }
+
+h3 {
+  font-size: 2vw;
+  columns: #ffc800; }
+
+h4 {
+  font-size: 1.875vw; }
+
+h5 {
+  font-size: 1.76471vw; }
+
+.local1 {
+  background-image: url("fotolocal1.jpg"); }
+
+.local2 {
+  background-image: url("fotolocal2.jpg"); }
+
+p a, .sucursales {
+  color: #f4f3ee;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center; }
+
+p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body footer .containerFooter #foot #foot a:hover {
+  color: #ffc800;
+  text-decoration: underline;
+  background-color: #463f3a;
+  transform: scale(1.2, 1.2); }
+
+.local1, .local2 {
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+body {
+  background-color: #8a8883;
+  font-family: "montserrat alternates"; }
+  body header {
+    margin-top: 5%;
+    background-color: black;
+    border: solid 5px black; }
+    body header .imgcentrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      animation-name: animado;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 0s; }
+
+@keyframes animado {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.2; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0.6; }
+  80% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+  body ul {
+    margin-top: 0px;
+    background-color: black; }
+    body ul li {
+      margin: 0.3rem; }
+      body ul li a {
+        color: #f4f3ee;
+        font-size: 0.8rem;
+        font-family: "montserrat";
+        text-decoration: none;
+        padding: 0.2rem;
+        text-transform: uppercase; }
+  body main h1 {
+    font-size: 1.2rem;
+    font-weight: none;
+    padding-top: 0.5%;
+    color: #ffc800;
+    text-transform: uppercase;
+    word-spacing: 0.8rem;
+    margin: 0.8rem;
+    animation-name: animado;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s; }
+
+@keyframes animado {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.2; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0.6; }
+  80% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+  body footer {
+    background-color: black;
+    text-align: center;
+    color: #8a8883; }
+    body footer #vapor {
+      font-size: 1.5rem;
+      padding-top: 1%;
+      margin-bottom: 1%;
+      color: #ffc800; }
+    body footer .containerFooter {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr; }
+      body footer .containerFooter h3 strong {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: "montserrat alternates"; }
+      body footer .containerFooter #foot {
+        list-style-type: none;
+        margin-bottom: 0px; }
+        body footer .containerFooter #foot a {
+          text-decoration: none;
+          margin-left: -3em;
+          color: #8a8883;
+          font-size: 0.7rem; }
+    body footer .pie {
+      text-align: right;
+      margin-bottom: 0px; }
+
+@media screen and (max-width: 576px) {
+  .containerFooter {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat 2, 1fr; }
+  .container .textoInicial {
+    font-size: 12px;
+    height: 80vw;
+    padding-right: 3%; } }
+
+@media screen and (max-width: 768px) {
+  .pie {
+    font-size: 10px; } }

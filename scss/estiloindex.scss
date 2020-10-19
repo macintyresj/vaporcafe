@@ -1,0 +1,138 @@
+$grisoscuro:#463f3a;
+$grismedio:#8a817c;
+$grisclaro:#8a8883; 
+$hueso:#f4f3ee;
+$amarillo:#ffc800;
+$color5:rgba(79, 72, 49, 0.6);
+
+@mixin apariencia ($font-size, $font-weight, $padding, $color, $text-transform){
+  font-size: $font-size;
+  font-weight: $font-weight;
+  padding-top: $padding;
+  color: $color;
+  text-transform: $text-transform;
+}
+
+$imgHtr: scale(1.15); //transformación para img hover
+$cardFtr: all 0.2s ease-in;//transición para cardflyer
+
+%apariencia2 {
+  color:$hueso;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center;
+}
+
+%ahover {
+  color: $amarillo;
+  text-decoration: underline;
+  background-color: $grisoscuro;
+  transform: scale(1.2, 1.2);
+  }
+
+
+   .carouselP {
+      @include apariencia (0.9rem, lighter, 0%, $amarillo, uppercase);
+        font-family: "abrilfatface";
+        background-color: $color5;
+        
+    }
+    .linkCarousel:hover{
+      color:white;
+      background: none;
+      text-decoration: underline;
+    }
+    p a{
+      @extend %apariencia2;
+    }
+    p a:hover{
+      @extend %ahover;
+      padding:2%;
+    }
+ .textoInicial{
+      margin-top:10%;
+      padding: 2%;
+      margin-bottom: 0%;
+      background-image:url("fondofrase.jpg");
+      height: 40vw;
+      background-repeat: no-repeat;
+      font-size: 2vw;
+    }
+
+    .italica{
+      @include apariencia (1.3rem, bold, 5%, $hueso, none);
+      font-style: italic;
+      letter-spacing: 0.1rem;
+      width: 100%;
+      background:none;
+  
+      em{
+        text-shadow: 2px 2px 5px;
+      }
+    }
+    #cardHome{
+    text-align: center;
+    
+      .container{
+        padding-top: 2vw; 
+        padding-bottom: 5vw;
+      
+        .cardFlyer{
+          border-radius: 5px;
+          background: $hueso;
+          margin-top: 50px;
+          transition: $cardFtr;
+          box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+
+          p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 10px; 
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #000000;
+          }
+
+         a{
+            color: $grisoscuro;
+            font-size: 0.8rem;
+            font-family: "montserrat";
+            text-decoration: none;
+            padding: 1vh;
+            text-transform: uppercase;
+            background-color: $grisclaro;
+          }
+          a:hover{
+          @extend %ahover;
+          }
+          .imageBox{
+            overflow: hidden;
+            box-shadow: 0px 2px 15px $color5;
+            border-radius: 5px;
+
+              .img{
+                
+                width: 100%;
+                height:300px;
+              }
+          }
+          .textContainer{
+            padding: 30px 18px;
+            text-align: center;
+          }
+  }
+
+  }   
+  .cardFlyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    transition: $cardFtr;
+    margin-top: 50px;
+
+
+      .imageBox img{
+       opacity: 0.7;    
+       transform: $imgHtr;
+    }
+}
+}

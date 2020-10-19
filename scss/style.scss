@@ -1,0 +1,174 @@
+@import "estiloindex";
+@import "estilocafe";
+@import "estilogaleria";
+@import "estilocontacto";
+
+$grisoscuro:#463f3a;
+$grismedio:#8a817c;
+$grisclaro:#8a8883; 
+$hueso:#f4f3ee;
+$amarillo:#ffc800;
+$color5:rgba(79, 72, 49, 0.6);
+$bordernombre: solid 3px $grismedio;
+@mixin apariencia ($font-size, $font-weight, $padding, $color, $text-transform){
+  font-size: $font-size;
+  font-weight: $font-weight;
+  padding-top: $padding;
+  color: $color;
+  text-transform: $text-transform;
+}
+
+$imgHtr: scale(1.15); //transformación para img hover
+$cardFtr: all 0.2s ease-in;//transición para cardflyer
+
+%apariencia2 {
+  color:$hueso;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center;
+}
+
+
+%ahover {
+  color: $amarillo;
+  text-decoration: underline;
+  background-color: $grisoscuro;
+  transform: scale(1.2, 1.2);
+  }
+
+%estilobg{
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+//Estilo para todos los html...
+
+body {
+   background-color: $grisclaro;
+   font-family: "montserrat alternates";
+    
+  header{
+    margin-top: 5%;
+    background-color: black;
+    border: solid 5px black;
+    
+    .imgcentrada{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      animation-name: animado;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 0s; 
+    }
+  
+    @keyframes animado {
+      @for $i from 0 through 5 {
+         #{$i*20}% {opacity: 0.20*$i;}
+      }
+    }
+  }
+  
+    ul{
+      margin-top: 0px;
+      background-color: black;
+
+      li{
+        margin: 0.3rem;
+          a{
+            color: $hueso;
+            font-size: 0.8rem;
+            font-family: "montserrat";
+            text-decoration: none;
+            padding: 0.2rem;
+            text-transform: uppercase;
+          }
+          a:hover{
+          @extend %ahover;
+
+        }
+      }
+    }
+  main {
+    h1 {
+      @include apariencia (1.2rem, none, 0.5%, $amarillo, uppercase);
+      word-spacing: 0.8rem;
+      margin: 0.8rem;
+      animation-name: animado;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 0s;
+    }
+    @keyframes animado {
+      @for $i from 0 through 5 {
+         #{$i*20}% {opacity: 0.20*$i;}
+      }
+    }
+  }
+   
+footer{
+  background-color: black;
+  text-align: center;
+  color:$grisclaro;
+  
+  #vapor{
+    font-size: 1.5rem;
+    padding-top: 1%;
+    margin-bottom: 1%;
+    color:$amarillo;
+    }
+  .containerFooter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+      h3 strong{
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: "montserrat alternates"
+    }
+      #foot{
+        list-style-type: none;
+        margin-bottom: 0px;
+     
+        a{
+          text-decoration: none;
+          margin-left: -3em;
+          color: $grisclaro;
+          font-size: 0.7rem;  
+        }
+        #foot a:hover{
+        @extend %ahover;
+        }
+      }
+  }
+
+
+  .pie{
+    text-align:right;
+    margin-bottom: 0px;
+  }
+}
+}
+//medias query
+@media screen and (max-width: 576px) {
+  .containerFooter{
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat (2,1fr);
+
+  }
+  .container .textoInicial{
+    font-size: 12px;
+    height: 80vw;
+    padding-right: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pie{
+    font-size: 10px;
+  } 
+}
+
+
