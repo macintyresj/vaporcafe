@@ -93,7 +93,7 @@ body {
     }
   main {
     h1 {
-      @include apariencia (1.2rem, none, 0.5%, $amarillo, uppercase);
+      @include apariencia (1.6rem, none, 0.5%, $amarillo, uppercase);
       word-spacing: 0.8rem;
       margin: 0.8rem;
       animation-name: animado;
@@ -166,6 +166,7 @@ footer{
   }
 }
 @media screen and (max-width: 768px) {
+  
   .pie{
     font-size: 10px;
   } 
