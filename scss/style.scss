@@ -45,13 +45,14 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
 //Estilo para todos los html...
 
 body {
-   background-color: $grisclaro;
+   background: linear-gradient($grisclaro, $grisoscuro);
    font-family: "montserrat alternates";
     
   header{
     margin-top: 5%;
     background-color: black;
     border: solid 5px black;
+
     
     .imgcentrada{
       display: block;

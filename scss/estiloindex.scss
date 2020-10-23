@@ -26,7 +26,7 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
 %ahover {
   color: $amarillo;
   text-decoration: underline;
-  background-color: $grisoscuro;
+  background: linear-gradient ($grisclaro, $grisoscuro);
   transform: scale(1.2, 1.2);
   }
 

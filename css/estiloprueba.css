@@ -7,7 +7,7 @@ p a, .sucursales {
 p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body footer .containerFooter #foot #foot a:hover {
   color: #ffc800;
   text-decoration: underline;
-  background-color: #463f3a;
+  background: linear-gradient #8a8883, #463f3a;
   transform: scale(1.2, 1.2); }
 
 .carouselP {
@@ -204,7 +204,7 @@ p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body foo
   background-repeat: no-repeat; }
 
 body {
-  background-color: #8a8883;
+  background: linear-gradient(#8a8883, #463f3a);
   font-family: "montserrat alternates"; }
   body header {
     margin-top: 5%;
