@@ -45,7 +45,7 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
 //Estilo para todos los html...
 
 body {
-   background: linear-gradient($grisclaro, $grisoscuro);
+   background: linear-gradient(black 0%, $grisoscuro 15%, $grisclaro 40%, #d1d0cd 60%, $grisclaro 85%, $grisoscuro 100%);
    font-family: "montserrat alternates";
     
   header{
@@ -71,7 +71,7 @@ body {
       }
     }
   }
-  
+    #nav2{
     ul{
       margin-top: 0px;
       background-color: black;
@@ -79,12 +79,12 @@ body {
       li{
         margin: 0.3rem;
           a{
-            color: $hueso;
-            font-size: 0.8rem;
+            @include apariencia (0.8rem, light, 0.2rem, $hueso, uppercase);
             font-family: "montserrat";
             text-decoration: none;
-            padding: 0.2rem;
-            text-transform: uppercase;
+            padding-right: 1.6rem;
+            padding-left: 1.6rem;
+
           }
           a:hover{
           @extend %ahover;
@@ -92,6 +92,7 @@ body {
         }
       }
     }
+  }
   main {
     h1 {
       @include apariencia (1.6rem, none, 0.5%, $amarillo, uppercase);
@@ -166,11 +167,18 @@ footer{
     padding-right: 3%;
   }
 }
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 768px) {  
+
+  #nav2{
+    a{
+    text-align: center;
+    }
+  }
+
   .pie{
     font-size: 10px;
   } 
 }
+
 
 

@@ -24,7 +24,7 @@ $bordernombre: solid 3px $grismedio;
   background-position: center center;
   background-repeat: no-repeat;
 }
-// $size:3vw;
+
 
       #dondeEstamos{
         text-align: center;
@@ -37,16 +37,7 @@ $bordernombre: solid 3px $grismedio;
         @extend %apariencia2;
       }
         
-          // h3{
-          //   font-size: $size/1.5;
-          //   columns: $amarillo;
-          // }
-          // h4{
-          //   font-size: $size/1.6;
-          // }
-          // h5{
-          //   font-size: $size/1.7;
-          // }
+          
           .local1{
             background-image: url("fotolocal1.jpg");
             @extend %estilobg;
@@ -55,3 +46,10 @@ $bordernombre: solid 3px $grismedio;
             background-image: url("fotolocal2.jpg");
             @extend %estilobg;
           }
+
+@media screen and (max-width: 576px){
+ #dondeEstamos{
+  color: $grisoscuro;
+  font-weight: bold;
+ } 
+}

@@ -4,10 +4,10 @@ p a, .sucursales {
   margin-left: 1%;
   text-align: center; }
 
-p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body footer .containerFooter #foot #foot a:hover {
+p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot #foot a:hover {
   color: #ffc800;
   text-decoration: underline;
-  background: linear-gradient #8a8883, #463f3a;
+  background-color: #463f3a;
   transform: scale(1.2, 1.2); }
 
 .carouselP {
@@ -59,7 +59,7 @@ p a:hover {
       background: #f4f3ee;
       margin-top: 50px;
       transition: all 0.2s ease-in;
-      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4); }
+      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8); }
       #cardHome .container .cardFlyer p {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -87,7 +87,7 @@ p a:hover {
         text-align: center; }
   #cardHome .cardFlyer:hover {
     background: #fff;
-    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
     transition: all 0.2s ease-in;
     margin-top: 50px; }
     #cardHome .cardFlyer:hover .imageBox img {
@@ -187,13 +187,18 @@ p a, .sucursales {
 .local2 {
   background-image: url("fotolocal2.jpg"); }
 
+@media screen and (max-width: 576px) {
+  #dondeEstamos {
+    color: #463f3a;
+    font-weight: bold; } }
+
 p a, .sucursales {
   color: #f4f3ee;
   font-family: "montserrat";
   margin-left: 1%;
   text-align: center; }
 
-p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body footer .containerFooter #foot #foot a:hover {
+p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot #foot a:hover {
   color: #ffc800;
   text-decoration: underline;
   background-color: #463f3a;
@@ -204,7 +209,7 @@ p a:hover, #cardHome .container .cardFlyer a:hover, body ul li a:hover, body foo
   background-repeat: no-repeat; }
 
 body {
-  background: linear-gradient(#8a8883, #463f3a);
+  background: linear-gradient(black 0%, #463f3a 15%, #8a8883 40%, #d1d0cd 60%, #8a8883 85%, #463f3a 100%);
   font-family: "montserrat alternates"; }
   body header {
     margin-top: 5%;
@@ -233,18 +238,21 @@ body {
     opacity: 0.8; }
   100% {
     opacity: 1; } }
-  body ul {
+  body #nav2 ul {
     margin-top: 0px;
     background-color: black; }
-    body ul li {
+    body #nav2 ul li {
       margin: 0.3rem; }
-      body ul li a {
-        color: #f4f3ee;
+      body #nav2 ul li a {
         font-size: 0.8rem;
+        font-weight: light;
+        padding-top: 0.2rem;
+        color: #f4f3ee;
+        text-transform: uppercase;
         font-family: "montserrat";
         text-decoration: none;
-        padding: 0.2rem;
-        text-transform: uppercase; }
+        padding-right: 1.6rem;
+        padding-left: 1.6rem; }
   body main h1 {
     font-size: 1.6rem;
     font-weight: none;
@@ -311,5 +319,7 @@ body {
     padding-right: 3%; } }
 
 @media screen and (max-width: 768px) {
+  #nav2 a {
+    text-align: center; }
   .pie {
     font-size: 10px; } }
