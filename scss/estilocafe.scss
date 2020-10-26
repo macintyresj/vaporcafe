@@ -33,7 +33,7 @@ $color5:rgba(79, 72, 49, 0.6);
    }
 
   .containerCafes{
-    margin-bottom:  4vw;
+    margin-bottom: 4vw;
     padding: 5vw;
     justify-content: space-around;
     align-items: center;
@@ -53,8 +53,20 @@ $color5:rgba(79, 72, 49, 0.6);
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
         animation-duration: 2s;
-        animation-delay: 1s;
+        animation-delay: 2s;
       }
+      }
+      .tipo1{
+      background-color: rgba(255,255,255, 0.5);
+      margin:2vw;
+      box-shadow: 3px 3px 6px black;
+      animation-name: animacion;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 1s;
+
+     
       }
     }
   }
@@ -62,7 +74,7 @@ $color5:rgba(79, 72, 49, 0.6);
 @keyframes animacion {
  0% {
     opacity: 0;
-    transform: translateX(-100vw) skewX(70deg);
+    transform: translateY(-100vw) skewX(70deg);
   }
   60% {
     opacity: 1;

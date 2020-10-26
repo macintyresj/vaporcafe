@@ -2,6 +2,7 @@
 @import "estilocafe";
 @import "estilogaleria";
 @import "estilocontacto";
+@import "estilo404";
 
 $grisoscuro:#463f3a;
 $grismedio:#8a817c;
@@ -141,10 +142,10 @@ footer{
           color: $grisclaro;
           font-size: 0.7rem;  
         }
-        #foot a:hover{
-        @extend %ahover;
-        }
       }
+      #foot a:hover{
+        @extend %ahover;
+      }  
   }
 
 
