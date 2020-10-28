@@ -79,10 +79,14 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
       
         .cardFlyer{
           border-radius: 5px;
+          width:100%;
           background: $hueso;
           margin-top: 50px;
           transition: $cardFtr;
           box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.80);
+
+          img{
+          width:100%;          }
 
           p {
             margin-top: 10px;
