@@ -30,12 +30,13 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
   transform: scale(1.2, 1.2);
   }
 
-
+  .textCarousel{
+    background-color: $color5;
+  }  
    .carouselP {
       @include apariencia (0.9rem, lighter, 0%, $amarillo, uppercase);
-        font-family: "abrilfatface";
-        background-color: $color5;
-        
+      font-family: "abrilfatface";
+      background-color: $color5;
     }
     .linkCarousel:hover{
       color:white;
@@ -49,11 +50,13 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
       @extend %ahover;
       padding:2%;
     }
- .textoInicial{
+
+
+    .textoInicial{
       margin-top:10%;
       padding: 2%;
       margin-bottom: 0%;
-      background-image:url("fondofrase.jpg");
+      background-image:url("../img/fondofrase.jpg");
       height: 40vw;
       background-repeat: no-repeat;
       font-size: 2vw;
@@ -94,7 +97,7 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
             padding-bottom: 10px; 
             font-size: 14px;
             letter-spacing: 1px;
-            color: #000000;
+            color: black;
           }
 
          a{
@@ -115,7 +118,6 @@ $cardFtr: all 0.2s ease-in;//transición para cardflyer
             border-radius: 5px;
 
               .img{
-                
                 width: 100%;
                 height:300px;
               }

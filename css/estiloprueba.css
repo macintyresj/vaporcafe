@@ -4,11 +4,14 @@ p a, .sucursales {
   margin-left: 1%;
   text-align: center; }
 
-p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot a:hover {
+p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot a:hover, body footer .containerFooter #redes a:hover {
   color: #ffc800;
   text-decoration: underline;
   background-color: #463f3a;
   transform: scale(1.2, 1.2); }
+
+.textCarousel {
+  background-color: rgba(79, 72, 49, 0.6); }
 
 .carouselP {
   font-size: 0.9rem;
@@ -31,7 +34,7 @@ p a:hover {
   margin-top: 10%;
   padding: 2%;
   margin-bottom: 0%;
-  background-image: url("fondofrase.jpg");
+  background-image: url("../img/fondofrase.jpg");
   height: 40vw;
   background-repeat: no-repeat;
   font-size: 2vw; }
@@ -69,7 +72,7 @@ p a:hover {
         padding-bottom: 10px;
         font-size: 14px;
         letter-spacing: 1px;
-        color: #000000; }
+        color: black; }
       #cardHome .container .cardFlyer a {
         color: #463f3a;
         font-size: 0.8rem;
@@ -119,7 +122,7 @@ p a:hover {
     width: 30%;
     height: 26vw;
     perspective: 1000px;
-    margin: 2vw 1vw; }
+    margin: 4vw 1vw; }
     .containerCafes .flipCard .flipCardInner {
       position: relative;
       width: 100%;
@@ -147,7 +150,11 @@ p a:hover {
         text-align: center;
         padding: 2vw 1vw; }
         .containerCafes .flipCard .flipCardInner .flipCardBack p {
-          font-size: 2vw; }
+          font-size: 2vw;
+          font-weight: light;
+          padding-top: 0.5vw;
+          color: #f4f3ee;
+          text-transform: none; }
 
 .flipCard:hover .flipCardInner {
   transform: rotateY(180deg); }
@@ -157,27 +164,28 @@ p a:hover {
     min-width: 40%;
     min-height: 35vw;
     padding: 1vw; }
-    .flipCard .nombre {
-      font-size: 2vw; } }
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg) scale(1.45); } }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 8px 8px 8px; }
+  .row .column {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 8px;
+    margin: 1%; }
+    .row .column img {
+      margin-top: 0.5rem;
+      vertical-align: middle;
+      width: 100%; }
 
-.column {
-  flex: 25%;
-  max-width: 33%;
-  padding: 0 8px;
-  margin: 1%; }
-
-.column img {
-  margin-top: 0.5rem;
-  vertical-align: middle;
-  width: 100%; }
-
-.cafe {
-  background: #f4f3ee; }
+@media screen and (max-width: 768px) {
+  .column:hover {
+    overflow: hidden; }
+    .column:hover img:hover {
+      transform: scale(1.8); } }
 
 p a, .sucursales {
   color: #f4f3ee;
@@ -203,10 +211,10 @@ p a, .sucursales {
   height: 300px; }
 
 .local1 {
-  background-image: url("fotolocal1.jpg"); }
+  background-image: url("../img/fotolocal1.jpg"); }
 
 .local2 {
-  background-image: url("fotolocal2.jpg"); }
+  background-image: url("../img/fotolocal2.jpg"); }
 
 @media screen and (max-width: 576px) {
   #dondeEstamos {
@@ -349,7 +357,7 @@ p a, .sucursales {
   margin-left: 1%;
   text-align: center; }
 
-p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot a:hover {
+p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot a:hover, body footer .containerFooter #redes a:hover {
   color: #ffc800;
   text-decoration: underline;
   background-color: #463f3a;
@@ -360,7 +368,7 @@ p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, bo
   background-repeat: no-repeat; }
 
 body {
-  background: linear-gradient(black 0%, #463f3a 15%, #8a8883 40%, #d1d0cd 60%, #8a8883 85%, #463f3a 100%);
+  background: linear-gradient(black 0%, #463f3a 10%, #8a8883 40%, #d1d0cd 60%, #8a8883 85%, #463f3a 100%);
   font-family: "montserrat alternates"; }
   body header {
     margin-top: 5%;
@@ -456,6 +464,10 @@ body {
           margin-left: -3em;
           color: #8a8883;
           font-size: 0.7rem; }
+      body footer .containerFooter #redes a {
+        color: #8a8883; }
+      body footer .containerFooter #redes a:hover {
+        background-color: transparent; }
     body footer .pie {
       text-align: right;
       margin-bottom: 0px; }

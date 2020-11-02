@@ -39,11 +39,11 @@ $bordernombre: solid 3px $grismedio;
         
           
           .local1{
-            background-image: url("fotolocal1.jpg");
+            background-image: url("../img/fotolocal1.jpg");
             @extend %estilobg;
           }
           .local2{
-            background-image: url("fotolocal2.jpg");
+            background-image: url("../img/fotolocal2.jpg");
             @extend %estilobg;
           }
 
